@@ -34,6 +34,7 @@
 `define branch1 10
 `define branch2 11
 `define stop 12
+`define execute3 13
 
 `define NOP 0
 `define ADD 1

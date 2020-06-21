@@ -203,6 +203,7 @@ input clk, reset;
                       inc_PC = 1;
                     end
                   default: next_state = `stop;   
+                  endcase
                 `execute1: 
                   begin
                     next_state = `execute2;
@@ -278,10 +279,10 @@ input clk, reset;
                     endcase
                   end
                     
-                    
-                
-              endcase
+                    `stop: next_state = `stop;
            default: next_state = `fetch1;
+           
+           
          endcase
          end
        
